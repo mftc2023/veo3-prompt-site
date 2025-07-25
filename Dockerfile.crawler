@@ -1,0 +1,11 @@
+FROM node:18
+
+WORKDIR /crawler
+
+COPY package.json package-lock.json* ./
+RUN npm install
+
+COPY scripts/ scripts/
+COPY data/ data/
+
+CMD ["node", "scripts/scrapeVeo3.js"]
