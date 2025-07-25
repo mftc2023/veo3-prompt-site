@@ -1,14 +1,10 @@
-veo3-prompt-site/
-├── components/
-│   └── PromptCard.tsx
-├── data/
-│   └── veo3_prompts.json
-├── pages/
-│   └── index.tsx
-├── scripts/
-│   └── scrapeVeo3.js
-├── styles/
-│   └── globals.css
-├── tailwind.config.js
-├── next.config.js
-├── README.md
+# Veo 3 Prompt 示例网站（自动更新版）
+
+📌 自动抓取 https://veo3-prompt.com/ 提供的 Prompt 数据，并展示为静态网站页面。
+
+## 🐳 快速部署（Docker）
+
+```bash
+git clone https://github.com/你的用户名/veo3-prompt-site.git
+cd veo3-prompt-site
+docker-compose up -d --build
